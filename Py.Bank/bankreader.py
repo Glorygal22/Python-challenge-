@@ -65,7 +65,7 @@ with open(csvpath, newline='') as csvfile:
     print(f"Greatest Decrease in Profits: {min_month} (${min_change})")
 
     # save summary to txt
-    save_file = bankreader.strip(".csv") + "_results.txt"
+    save_file = csvpath.strip(".csv") + "_results.txt"
     filepath = os.path.join(".", save_file)
     with open(filepath,'w') as text:
         text.write("Financial Analysis" + "\n")
